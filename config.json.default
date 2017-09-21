@@ -1,3 +1,4 @@
 {
-    "telegram_token": "THE TELEGRAM BOT TOKEN"
+    "telegram_token": "THE TELEGRAM BOT TOKEN",
+    "ethereum_node": "WHICH ETHEREUM NODE TO POINT TO"
 }

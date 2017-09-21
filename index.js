@@ -7,9 +7,11 @@ if(!config) {
 const TeleBot = require('telebot')
 const bot = new TeleBot(config.telegram_token)
 
+const Api = require('./app/api')
+const api = Api(config.ethereum_node)
 
 const defineMessageHandlers = require('./app/handlers')
 
-defineMessageHandlers(bot)
+defineMessageHandlers(bot, api)
 
 bot.start()
